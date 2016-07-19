@@ -2,6 +2,15 @@
 
 from models import *
 
+'''def connection(database):
+    database.connect()
+    # List the tables here what you want to create...
+    database.create_tables([Person, Mentor, Student, CodecoolClass], safe=True)
+'''
+
+'''database.connect()
+    # List the tables here what you want to create...
+    database.create_tables([Person, Mentor, Student, CodecoolClass], safe=True)'''
+
 db.connect()
-# List the tables here what you want to create...
 db.create_tables([Person, Mentor, Student, CodecoolClass], safe=True)
