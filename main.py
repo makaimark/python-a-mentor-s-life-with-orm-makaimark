@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Populate random data with your models
 import models
 import build
@@ -20,5 +20,4 @@ mentor_1.save()
 mentor_1.insert()  # necessary??
 <<<<<<< HEAD
 '''
-=======
->>>>>>> f68c22ec23ba3a988d6ea210742dec0b709c9f10
+
