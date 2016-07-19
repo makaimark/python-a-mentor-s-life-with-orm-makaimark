@@ -23,6 +23,11 @@ class CodecoolClass(BaseModel):
         return self.studentlist
 
 
+class CodecoolClass(BaseModel):
+    location = CharField()
+    year = DateTimeField()
+
+
 
 class Person(BaseModel):
     first_name = CharField()
@@ -41,5 +46,6 @@ class Student(Person):
 class Mentor(Person):
     nickname = CharField()
     codecool_class = ForeignKeyField(CodecoolClass, related_name='mentorlist')
-
-
+    year_of_birth = DateTimeField()
+    gender = CharField()
+    codecool_class = ForeignKeyField(CodecoolClass)
